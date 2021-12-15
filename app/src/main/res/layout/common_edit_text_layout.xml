@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        tools:ignore="DisableBaselineAlignment,UselessParent">
+<!-- image layout -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:layout_weight="0.2">
+
+            <ImageView
+                android:id="@+id/common_edit_text_icon"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:src="@drawable/ic_email"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+
+<!--    edit text layout    -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/common_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:hint="@string/enter_email"
+                android:maxLines="1"
+                android:fontFamily="@font/rounded_elegance"
+                android:textColorHint="@color/dark_grey"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/set_cursor_color_layout"
+                android:textSize="@dimen/sp_14"
+                tools:ignore="Autofill,LabelFor,TextFields,UnusedAttribute" />
+
+            <View
+                android:id="@+id/edit_txt_bottom_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_0_5dp"
+                android:background="@color/dark_grey" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

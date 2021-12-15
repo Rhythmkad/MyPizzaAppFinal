@@ -1,0 +1,136 @@
+<resources>
+    <string name="app_name">Pizza All Day</string>
+    <string name="pizza_all_day">Pizza All Day</string>
+    <string name="pizza_app_title">Order Pizza, Eat, Repeat.</string>
+
+    <!-- Strings related to login and Signup-->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="email_already_exist">Email id already exists.</string>
+
+    <string name="enter_email">Email</string>
+    <string name="forgot_password_login_screen_txt">Forgot Password?</string>
+    <string name="login_txt_button">Login</string>
+    <string name="dont_have_account_txt">Don\'t have an account?</string>
+    <string name="signup_login_screen_txt">SIGNUP</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="password_txt">Password</string>
+    <string name="login_fields_cannot_be_empty">Please enter login details or Sign-Up</string>
+    <string name="enter_valid_email">Please enter valid email id.</string>
+    <string name="enter_valid_password">Please enter valid password.</string>
+    <string name="ok_txt">OK</string>
+    <string name="confirm_password_hint_txt">Confirm Password</string>
+    <string name="address_txt">Address</string>
+    <string name="name_hint_txt">Name</string>
+    <string name="phone_number_hint_txt">Phone number</string>
+    <string name="signup_failed">SignUp failed</string>
+    <string name="sign_up_fields_cannot_be_empty">Details cannot be empty.</string>
+    <string name="password_validation_txt">Password should be 8 characters long.</string>
+    <string name="password_confirm_not_match">Password and Confirm password does not match.</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="dont_worry_message">Don\'t worry! We just need your registered mobile \n number to send verification code to send password.</string>
+    <string name="send">Send</string>
+    <string name="email_phone_number">MOBILE NUMBER</string>
+    <string name="verification_code_send_message">OTP has been sent to your email address/mobile number.Please enter it below.</string>
+    <string name="submit_btn_txt">Submit</string>
+    <string name="enter_phone_number">Please enter phone number</string>
+    <string name="enter_valid_phoneNumber">Enter valid phone number</string>
+    <string name="dummy_name">Test test</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--/* =========== Side menu ================= */-->
+    <string name="menu">My Pizza\'s Menu</string>
+    <string name="laundry">Laundry</string>
+    <string name="payment">Payment</string>
+    <string name="about_us">About Us</string>
+    <string name="setting">Settings</string>
+    <string name="my_profile">My Profile</string>
+    <string name="logout">Logout</string>
+    <string name="order_history">Order history</string>
+    <string name="my_order">My Orders</string>
+
+
+    <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="notification_txt">Notifications</string>
+    <string name="privacy_policy_txt">Privacy Policy</string>
+    <string name="Rhythm_kad">Rhythm Kad</string>
+    <string name="student_id">Student ID: A00245057</string>
+    <string name="course_code">Course code: JAV1001</string>
+    <string name="dummy_phone_number">6411144444</string>
+    <string name="dummy_email">dummyEmail@gmail.com</string>
+    <string name="dummy_address">Cambrian college, sudbury, ontario, canada</string>
+    <string name="delete_account_txt">Delete Account</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="select_gender">Please select gender</string>
+    <string name="order_now_btn_txt">Order now</string>
+
+    <!--  Pizza menu, Pizza Name and Description etc.  -->
+    <string name="pizza_name">Double Cheese Margherita</string>
+    <string name="veggie_paradise">Veggie Paradise</string>
+    <string name="veggie_paradise_details">The awesome foursome! Golden corn, black olives, capsicum, red paprika</string>
+    <string name="veg_peppy_paneer">Veg Peppy Paneer</string>
+    <string name="veg_peppy_paneer_details">Flavorful trio of juicy paneer, crisp capsicum with spicy red paprika</string>
+    <string name="chicken_pepper_barbecue">Chicken Pepper Barbeque</string>
+    <string name="chicken_pepper_barbecue_details">Pepper barbecue chicken for that extra zing</string>
+    <string name="non_veg_supreme">Non Veg Supreme</string>
+    <string name="non_veg_supreme_details"><![CDATA[Supreme combination of black olives, onion, capsicum, grilled mushroom, pepper barbecue chicken, peri-peri chicken & grilled chicken rashers]]></string>
+    <string name="new_margherita_veg">New Margherita</string>
+    <string name="new_margherita_veg_details">Classic delight with 100% real mozzarella cheese.</string>
+    <string name="new_fresh_veggie">New Fresh Veggie</string>
+    <string name="new_fresh_veggie_details"><![CDATA[Delectable combination of onion & capsicum, a veggie lovers pick.]]></string>
+    <string name="chicken_sausage">Chicken Sausage</string>
+    <string name="chicken_sausage_details">American classic! Spicy, herbed chicken sausage on pizza</string>
+    <string name="chicken_golden_delight">Chicken Golden Delight</string>
+    <string name="chicken_golden_delight_details">Double pepper barbecue chicken, golden corn and extra cheese, true delight.</string>
+    <string name="chicken_pepperoni">Chicken Pepperoni</string>
+    <string name="chicken_pepperoni_details">A classic American taste! Relish the delectable flavor of Chicken Pepperoni, topped with extra cheese</string>
+    <string name="indi_tandoori_paneer">Indi Tandoori Paneer</string>
+    <string name="indi_tandoori_paneer_details"><![CDATA[It is hot. It is spicy. It is oh-so-Indian. Tandoori paneer with capsicum, red paprika & mint mayo.]]></string>
+    <string name="farmhouse">Farmhouse</string>
+    <string name="farmhouse_details"><![CDATA[Delightful combination of onion, capsicum, tomato & grilled mushroom]]></string>
+    <string name="mexican_green_wave">Mexican Green Wave</string>
+    <string name="mexican_green_wave_details"><![CDATA[Mexican herbs sprinkled on onion, capsicum, tomato & jalapeno]]></string>
+    <string name="crust_size_order_txt">Regular | Hand Tossed | Extra cheese</string>
+    <string name="feedback_txt">Feedback</string>
+    <string name="please_take_a_moment_to_give_us">Please take a moment to give us</string>
+    <string name="pizza_default_price">$ 12</string>
+    <string name="delete_order">Remove order</string>
+    <string name="order_completed">Order Completed</string>
+    <string name="order_on_its_way_txt">Order is on its way</string>
+    <string name="cancel_order_txt">Cancel Order</string>
+
+    <!--  Payment fragment strings  -->
+    <string name="card_holder_name">Card holder name</string>
+    <string name="dummy_card_number">1234 1234 1234 1234</string>
+    <string name="cvv_number">CVV</string>
+    <string name="four_dots">"•••• •••• •••• "</string>
+    <string name="add_card_txt">Add Card</string>
+    <string name="debit_card_text">Debit Card/Credit Card</string>
+    <string name="add_a_card">Add a Card</string>
+
+    <string name="cash_on_delivery">Cash on delivery</string>
+    <string name="dummy_price">$ 12</string>
+    <string name="total_amount_txt">Grand Total</string>
+    <string name="tax_txt">Tax</string>
+    <string name="confirm_order">Confirm Order</string>
+    <string name="dummy_agreement">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="your_order_is_being_prepared_txt">Your order is being prepared</string>
+    <string name="help_center_txt">Help</string>
+    <string name="dummy_delivery_address">1390 BarryDowne Rd. Sudbury, ON, P3A 6B9</string>
+    <string name="briefly_explain_your_issue_txt">Briefly explain your issue.</string>
+    <string name="submit_your_issue_txt">Submit your issue</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="by_card">By Card</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="thank_you_txt">thank you!, for placing an order with us, We\'ve \n received your order, your pizza should be \n delivered in around 20–25 minutes.</string>
+    <string name="updation_failed">Updation Failed</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AddCardFragment">
+
+<!--  braintree cardForm tab  -->
+    <com.braintreepayments.cardform.view.CardForm
+        android:id="@+id/add_card_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:theme="@style/AppTheme"/>
+
+<!-- save card button   -->
+    <include
+        android:id="@+id/save_card_layout"
+        layout="@layout/common_rounded_filled_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_20sdp" />
+
+</RelativeLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+<!-- logo image layout   -->
+    <RelativeLayout
+        android:id="@+id/logo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:src="@drawable/pizza_all_day_logo"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+<!-- email and password layout   -->
+
+    <LinearLayout
+        android:id="@+id/login_detail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_layout"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:orientation="vertical"
+        android:padding="@dimen/_2sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp">
+
+            <TextView
+                android:id="@+id/forgot_password_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/enter_password_include_tv"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/rounded_elegance"
+                android:text="@string/forgot_password_login_screen_txt"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_16" />
+
+            <include
+                android:id="@+id/enter_email_include_tv"
+                layout="@layout/common_edit_text_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_8sdp" />
+
+            <include
+                android:id="@+id/enter_password_include_tv"
+                layout="@layout/common_edit_text_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_below="@+id/enter_email_include_tv"
+                android:layout_marginEnd="@dimen/_8sdp" />
+
+        </RelativeLayout>
+
+        <!--    Blank view    -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_16sdp" />
+
+        <!--    Login Button    -->
+        <include
+            android:id="@+id/login_include_layout"
+            layout="@layout/common_rounded_filled_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_48sdp" />
+    </LinearLayout>
+
+<!--  signup text layout  -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/login_detail_layout"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/dont_have_account_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="?android:selectableItemBackground"
+            android:text="@string/dont_have_account_txt"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18"
+            android:fontFamily="@font/rounded_elegance"/>
+
+        <TextView
+            android:id="@+id/sign_up_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_toEndOf="@+id/dont_have_account_tv"
+            android:background="?android:selectableItemBackground"
+            android:text="@string/signup_login_screen_txt"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_18"
+            android:fontFamily="@font/rounded_elegance" />
+
+    </RelativeLayout>
+</RelativeLayout>

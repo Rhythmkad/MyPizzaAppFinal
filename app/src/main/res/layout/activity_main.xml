@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/fragment_user"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:overScrollMode="never">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:openDrawer="start">
+
+<!--  including layout for home screen toolbar and frame layout   -->
+        <include
+            layout="@layout/app_bar_home_screen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+<!--    code for navigation view where we have
+   inserted headerLayout for user name and a list view
+   for various side menu categories -->
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            android:background="@color/colorPrimary"
+            app:headerLayout="@layout/nav_header_home_screen"
+            android:overScrollMode="never">
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_80sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:divider="@null"
+                android:background="?android:selectableItemBackground"
+                android:id="@+id/menu_layout"
+                android:overScrollMode="never"/>
+
+        </com.google.android.material.navigation.NavigationView>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>

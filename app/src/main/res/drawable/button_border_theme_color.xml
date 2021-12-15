@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+<!--  This xml is used when we need to set only outer borders of edit text
+  textview or button-->
+    <!--<corners android:radius="3dp" />-->
+    <stroke
+        android:width="2px"
+        android:color="@color/colorPrimary" />
+</shape>

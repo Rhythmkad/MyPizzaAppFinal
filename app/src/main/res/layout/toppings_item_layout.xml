@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- toppings items checked text view -->
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toppings_checkedTv"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_30sdp"
+    android:textColor="@color/black"
+    android:text="Grilled Mushroom"
+    android:gravity="center_vertical"
+    android:fontFamily="@font/rounded_elegance"
+    android:textSize="@dimen/sp_14"
+    android:checkMark="?android:attr/textCheckMark"
+    android:paddingStart="@dimen/_8sdp"
+    android:paddingEnd="@dimen/_3sdp" />
+
+<!-- listChoiceIndicatorMultiple
+    textCheckMarkInverse
+    textCheckMark -->

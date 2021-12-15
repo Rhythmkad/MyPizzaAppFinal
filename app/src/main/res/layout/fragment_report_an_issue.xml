@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ReportAnIssueFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_16sdp">
+
+        <RelativeLayout
+            android:id="@+id/issue_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/rounded_empty_border"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true">
+
+            <EditText
+                android:id="@+id/report_issue_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:layout_marginBottom="@dimen/_6sdp"
+                android:background="@color/transparent_light_background"
+                android:fontFamily="@font/rounded_elegance"
+                android:hint="@string/briefly_explain_your_issue_txt"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14"
+                tools:ignore="Autofill" />
+        </RelativeLayout>
+        <Button
+            android:id="@+id/submit_your_issue_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_16sdp"
+            android:background="@drawable/common_button_round_corners"
+            android:layout_below="@+id/issue_layout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:text="@string/submit_your_issue_txt"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/sp_16"
+            android:fontFamily="@font/rounded_elegance"/>
+    </RelativeLayout>
+</ScrollView>

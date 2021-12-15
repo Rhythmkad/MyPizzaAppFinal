@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        tools:context=".fragments.ConfirmOrderFragment">
+
+<!--    Layout for subtotal and tax    -->
+        <RelativeLayout
+            android:id="@+id/sub_total_and_tax_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp">
+
+            <TextView
+                android:id="@+id/payment_sub_total_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/rounded_elegance"
+                android:layout_toStartOf="@+id/payment_sub_total_value_tv"
+                android:text="SubTotal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/payment_sub_total_value_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:fontFamily="@font/rounded_elegance"
+                android:text="@string/dummy_price"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18"
+                tools:ignore="RelativeOverlap" />
+
+
+            <TextView
+                android:id="@+id/payment_tax_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/payment_sub_total_tv"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/rounded_elegance"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_toStartOf="@+id/payment_tax_value_tv"
+                android:text="@string/tax_txt"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/payment_tax_value_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_below="@+id/payment_sub_total_value_tv"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/rounded_elegance"
+                android:text="$ 2.1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18"
+                tools:ignore="RelativeOverlap" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_line1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_0_5dp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_below="@+id/sub_total_and_tax_layout"
+            android:background="@color/dark_grey" />
+
+
+<!--    layout for grand total    -->
+        <RelativeLayout
+            android:id="@+id/total_amount_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_line1"
+            android:layout_marginTop="@dimen/_4sdp">
+
+            <TextView
+                android:id="@+id/payment_total_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_toStartOf="@+id/payment_total_value_tv"
+                android:fontFamily="@font/rounded_elegance"
+                android:text="@string/total_amount_txt"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_20" />
+
+            <TextView
+                android:id="@+id/payment_total_value_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/rounded_elegance"
+                android:hint="@string/dummy_price"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_line2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_0_5dp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_below="@+id/total_amount_layout"
+            android:background="@color/dark_grey" />
+
+<!--    payment mode radio group layout    -->
+        <RadioGroup
+            android:id="@+id/payment_mode_radio_grp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_line2"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/cash_on_delivery_radio_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/rounded_elegance"
+                android:text="@string/cash_on_delivery"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16" />
+
+            <RadioButton
+                android:id="@+id/card_delivery_radio_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:fontFamily="@font/rounded_elegance"
+                android:text="@string/by_card"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16" />
+
+        </RadioGroup>
+
+<!--    text view to show add a card text if there is no card in
+ the list -->
+        <TextView
+            android:id="@+id/add_card_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/payment_mode_radio_grp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="?attr/selectableItemBackground"
+            android:fontFamily="@font/rounded_elegance"
+            android:text="No cards to show, add a card?"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/sp_12"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+<!--    credit card spinner and cvv edit text layout    -->
+        <RelativeLayout
+            android:id="@+id/payment_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/payment_mode_radio_grp"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/cvv_edit_text"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_spinner"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:background="@drawable/button_border_theme_color"
+                android:fontFamily="@font/rounded_elegance"
+                android:gravity="center"
+                android:hint="@string/cvv_number"
+                android:inputType="number"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:padding="10dp"
+                tools:ignore="Autofill,LabelFor" />
+
+            <Spinner
+                android:id="@+id/card_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:background="@drawable/rounded_empty_border"
+                android:padding="@dimen/_2sdp" />
+
+
+        </RelativeLayout>
+
+<!--  delivery address layout      -->
+
+        <RelativeLayout
+            android:id="@+id/address_relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/payment_layout"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_48sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:background="@drawable/rounded_empty_border">
+
+            <EditText
+                android:id="@+id/customer_address_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/address_txt_tv"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:background="@color/transparent_light_background"
+                android:fontFamily="@font/rounded_elegance"
+                android:hint="@string/dummy_delivery_address"
+                android:inputType="textPostalAddress"
+                android:maxLength="100"
+                android:maxLines="3"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14"
+                tools:ignore="Autofill" />
+
+            <TextView
+                android:id="@+id/address_txt_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:fontFamily="@font/rounded_elegance"
+                android:text="Delivery Address"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14" />
+
+        </RelativeLayout>
+
+<!--   confirm order button     -->
+
+        <include
+            android:id="@+id/proceed_btn"
+            layout="@layout/common_rounded_filled_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/address_relative_layout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/_52sdp"
+            android:layout_marginBottom="@dimen/_12sdp" />
+    </RelativeLayout>
+</ScrollView>

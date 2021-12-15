@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".fragments.SettingsFragment">
+
+<!--  notification switch button layout  -->
+    <RelativeLayout
+        android:id="@+id/notification_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/_12sdp"
+        android:paddingTop="@dimen/_16sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_16sdp"
+        android:background="?attr/selectableItemBackground"
+        tools:ignore="UnusedAttribute">
+
+        <ImageView
+            android:id="@+id/notification_icon"
+            android:layout_width="@dimen/_14sdp"
+            android:layout_height="@dimen/_14sdp"
+            android:src="@drawable/ic_notification_icon"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/notification_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_toEndOf="@+id/notification_icon"
+            android:fontFamily="@font/rounded_elegance"
+            android:text="@string/notification_txt"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp_18"
+            tools:ignore="RelativeOverlap" />
+
+        <Switch
+            android:id="@+id/notification_switch_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:theme="@style/switch_theme"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_0_5dp"
+        android:layout_marginLeft="@dimen/_14sdp"
+        android:layout_marginRight="@dimen/_14sdp"
+        android:background="@color/silver" />
+
+<!--  terms and conditions layout  -->
+    <RelativeLayout
+        android:id="@+id/terms_condition_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/_12sdp"
+        android:paddingTop="@dimen/_16sdp"
+        android:paddingRight="@dimen/_12sdp"
+        android:paddingBottom="@dimen/_16sdp"
+        android:background="?attr/selectableItemBackground"
+        tools:ignore="UnusedAttribute">
+
+        <ImageView
+            android:id="@+id/policy_icon"
+            android:layout_width="@dimen/_14sdp"
+            android:layout_height="@dimen/_14sdp"
+            android:src="@drawable/terms_conditions"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/terms_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_toEndOf="@+id/policy_icon"
+            android:fontFamily="@font/rounded_elegance"
+            android:text="@string/terms_conditions"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp_18"
+            tools:ignore="RelativeOverlap" />
+
+        <ImageView
+            android:id="@+id/arrow_image_icon"
+            android:layout_width="@dimen/_14sdp"
+            android:layout_height="@dimen/_14sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_next_arrow"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_0_5dp"
+        android:layout_marginLeft="@dimen/_14sdp"
+        android:layout_marginRight="@dimen/_14sdp"
+        android:background="@color/silver" />
+
+<!-- privacy policy layout   -->
+    <RelativeLayout
+        android:id="@+id/privacy_policy_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/_12sdp"
+        android:paddingTop="@dimen/_16sdp"
+        android:paddingRight="@dimen/_12sdp"
+        android:paddingBottom="@dimen/_16sdp"
+        android:background="?attr/selectableItemBackground"
+        tools:ignore="UnusedAttribute">
+
+        <ImageView
+            android:id="@+id/terms_icon"
+            android:layout_width="@dimen/_14sdp"
+            android:layout_height="@dimen/_14sdp"
+            android:src="@drawable/privacy_policy"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/policy_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_toEndOf="@+id/terms_icon"
+            android:fontFamily="@font/rounded_elegance"
+            android:text="@string/privacy_policy_txt"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp_18"
+            tools:ignore="RelativeOverlap" />
+
+        <ImageView
+            android:id="@+id/arrow_image_icon2"
+            android:layout_width="@dimen/_14sdp"
+            android:layout_height="@dimen/_14sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_next_arrow"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_0_5dp"
+        android:layout_marginLeft="@dimen/_14sdp"
+        android:layout_marginRight="@dimen/_14sdp"
+        android:background="@color/silver" />
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragments.MyCartFragment">
+
+    <include
+        android:id="@+id/empty_list_layout"
+        layout="@layout/empty_list_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_120sdp" />
+
+<!--  ordered pizza list recycler view  -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_cart_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/relativeLayout"/>
+
+<!--  subTotal and submit order btn layout  -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/text_color_transparent">
+
+        <Button
+            android:id="@+id/submit_order_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subtotal_tv"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/rounded_elegance"
+            android:text="Submit Order"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/sp_18" />
+
+        <TextView
+            android:id="@+id/subtotal_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/rounded_elegance"
+            android:padding="@dimen/_6sdp"
+            android:text="SubTotal $12"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

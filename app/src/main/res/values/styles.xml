@@ -1,0 +1,106 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:typeface">sans</item>
+        <item name="fontFamily">@font/rounded_elegance</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+
+        <!-- if you're using AppCompatActivity support library of version 22.1 or greater, add this line:  -->
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <!--    for action bar elevation   -->
+    <style name="AppTheme.AppBarOverlay" parent="Base.Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="android:elevation" tools:targetApi="lollipop">0dp</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <!--<item name="android:theme">@style/action_button_toolbar</item>-->
+    </style>
+
+    <style name="action_button_toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:theme">@style/action_button</item>
+    </style>
+
+    <style name="switch_theme" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/colorPrimary</item>
+
+        <!-- inactive thumb color -->
+        <!--<item name="colorSwitchThumbNormal">#f1f1f1-->
+        <!--</item>-->
+
+    </style>
+
+    <style name="action_button" parent="Widget.AppCompat.ActionButton">
+        <item name="android:width">@dimen/_24sdp</item>
+        <item name="android:minWidth">@dimen/_20sdp</item>
+        <item name="android:maxWidth">@dimen/_24sdp</item>
+    </style>
+
+    <!-- No Action Bar with White Status Bar and Dark Status Bar Icons -->
+    <style name="NoActionBar" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!-- Set default typeface for application -->
+        <item name="android:typeface">serif</item>
+
+        <!--<item name="android:fontFamily">@font/rounded_elegance</item>-->
+        <!-- Make Status Bar Color White -->
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+
+        <!-- Make Status Bar Icon Color Dark -->
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+
+    </style>
+
+
+    <!-- Draw layout over Status bar -->
+    <style name="TransparentStatusBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:ignore="NewApi">true</item>
+        <!--<item name="android:statusBarColor" tools:ignore="NewApi">@color/colorPrimary</item>-->
+        <item name="android:windowTranslucentStatus" tools:ignore="NewApi">true</item>
+
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowTranslucentNavigation" tools:ignore="NewApi">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:ignore="NewApi">false</item>
+    </style>
+
+    <style name="tab_text" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/rounded_elegance</item>
+        <!--<item name="android:textStyle">bold</item>-->
+        <item name="android:textSize">18sp</item>
+    </style>
+
+
+    <!--// check box style-->
+    <style name="checkbox" parent="Base.Theme.AppCompat">
+        <item name="colorAccent">@color/text_color</item>
+        <item name="android:textColorSecondary">@color/colorPrimary</item>
+    </style>
+
+    <!--/* feedback rating bar theme */-->
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/text_color</item>
+        <item name="colorControlActivated">@color/text_color</item>
+    </style>
+
+    <style name="custom_rating_bar" parent="Widget.AppCompat.RatingBar.Small">
+        <item name="android:theme">@style/RatingBar</item>
+        <item name="android:rating">5.0</item>
+        <item name="android:numStars">5</item>
+        <item name="android:minHeight">@dimen/_12sdp</item>
+        <item name="android:maxHeight">@dimen/_18sdp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+
+<!--  Layout for side menu(navigation drawer) list view  -->
+    <LinearLayout
+        android:id="@+id/itemLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="0dp"
+        android:background="?android:selectableItemBackground">
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:gravity="center"
+            android:minHeight="@dimen/_44sdp"
+            android:orientation="vertical"
+            android:weightSum="2"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/drawer_icon"
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:gravity="center"
+                android:visibility="visible"
+                android:src="@drawable/ic_home_white"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/drawer_itemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:fontFamily="@font/rounded_elegance"
+                android:gravity="center"
+                android:text="@string/menu"
+                android:textAllCaps="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_for_list"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_0_5dp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:background="@color/text_color" />
+    </LinearLayout>
+</RelativeLayout>

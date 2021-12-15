@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_appbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:contentInsetStart="0dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetEnd="0dp"
+        android:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        app:title="@string/dummy_name"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        tools:ignore="UnusedAttribute">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp">
+
+<!-- image view for back button -->
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:background="?android:selectableItemBackground"
+                android:src="@drawable/ic_backbutton"
+                tools:ignore="ContentDescription" />
+
+<!--     Image view for cart button       -->
+            <ImageView
+                android:id="@+id/cart_iv"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:background="?android:selectableItemBackground"
+                android:src="@drawable/ic_cart"
+                android:visibility="invisible"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+<!--  Text view to show tool bar title  -->
+    <TextView
+        android:id="@+id/home_activity_title_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_9sdp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:maxLines="1"
+        android:fontFamily="@font/rounded_elegance"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_18"
+        android:textStyle="normal" />
+
+</com.google.android.material.appbar.AppBarLayout>

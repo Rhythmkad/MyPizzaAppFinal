@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#48396D</color>
+    <color name="colorPrimaryDark">#48396D</color>
+    <color name="colorAccent">#48396D</color>
+    <!--<color name="colorAccent">#D81B60</color>-->
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="silver">#bebebe</color>
+    <color name="dark_grey">#535151</color>
+    <color name="light_grey">#797777</color>
+    <color name="golden_yellow">#d7a62c</color>
+    <color name="google_button">#C90606</color>
+    <color name="facebook_button">#3a559f</color>
+    <color name="text_color">#5DBCD2</color>
+    <color name="text_color_transparent">#729ADBEB</color>
+    <color name="transparent_light_background">#00000000</color>
+    <color name="black_transparent_dark">#3D181717</color>
+    <color name="black_transparent_extra_dark">#610A0A0A</color>
+    <color name="white_transparent_dark">#E1FFFFFF</color>
+    <color name="black_transparent">#3D2C2B2B</color>
+    <color name="divider_line">#B8B3B3</color>
+</resources>

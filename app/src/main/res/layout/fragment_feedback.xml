@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".fragments.FeedbackFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+<!--   Logo image and rating bar layout     -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="@dimen/_160sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginBottom="@dimen/_8sdp">
+
+                <ImageView
+                    android:id="@+id/profile_picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/pizza_all_day_logo" />
+
+            </RelativeLayout>
+
+            <RatingBar
+                android:id="@+id/feedback_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:theme="@style/RatingBar" />
+
+        </LinearLayout>
+
+<!--   edit text layout for feedback and submit button layout     -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:paddingLeft="@dimen/_6sdp"
+            android:paddingRight="@dimen/_6sdp"
+            android:paddingTop="@dimen/_16sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/feedback_edt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_72sdp"
+                android:layout_margin="@dimen/_4sdp"
+                android:background="@drawable/rounded_empty_border"
+                android:gravity="top"
+                android:inputType="text"
+                android:maxLines="5"
+                android:maxLength="56"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:hint="Send us feedback"
+                android:fontFamily="@font/rounded_elegance"
+                android:textAlignment="viewStart"
+                android:textCursorDrawable="@drawable/set_cursor_color_layout"
+                android:textSize="@dimen/sp_12"
+                tools:ignore="Autofill,LabelFor,RtlCompat" />
+
+            <include
+                android:id="@+id/submit_button"
+                layout="@layout/common_rounded_filled_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_32sdp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

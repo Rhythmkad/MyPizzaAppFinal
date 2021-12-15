@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:overScrollMode="never">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--  Logo layout  -->
+        <RelativeLayout
+            android:id="@+id/logo_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:src="@drawable/pizza_all_day_logo"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+
+<!--    fields layout    -->
+        <LinearLayout
+            android:id="@+id/sign_up_value_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo_layout"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:orientation="vertical"
+            android:padding="@dimen/_2sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp">
+
+                <RadioGroup
+                    android:id="@+id/sex_radioGrp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/enter_city_include_tv"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RadioButton
+                        android:id="@+id/male_radioBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/rounded_elegance"
+                        android:text="@string/male"
+                        android:textSize="@dimen/sp_14" />
+
+                    <RadioButton
+                        android:id="@+id/female_radioBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/rounded_elegance"
+                        android:text="@string/female"
+                        android:textSize="@dimen/sp_14" />
+
+                </RadioGroup>
+
+                <include
+                    android:id="@+id/enter_email_include_tv"
+                    layout="@layout/common_edit_text_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/enter_name_include_tv"
+                    android:layout_marginTop="@dimen/_12sdp" />
+
+                <include
+                    android:id="@+id/enter_phone_include_tv"
+                    layout="@layout/common_edit_text_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/enter_email_include_tv"
+                    android:layout_marginTop="@dimen/_12sdp" />
+
+                <include
+                    android:id="@+id/enter_password_include_tv"
+                    layout="@layout/common_edit_text_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/enter_phone_include_tv"
+                    android:layout_marginTop="@dimen/_12sdp" />
+
+                <include
+                    android:id="@+id/enter_confirm_password_include_tv"
+                    layout="@layout/common_edit_text_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/enter_password_include_tv"
+                    android:layout_marginTop="@dimen/_12sdp" />
+
+                <include
+                    android:id="@+id/enter_city_include_tv"
+                    layout="@layout/common_edit_text_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/enter_confirm_password_include_tv"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginBottom="@dimen/_4sdp" />
+
+                <include
+                    android:id="@+id/enter_name_include_tv"
+                    layout="@layout/common_edit_text_layout" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_24sdp" />
+
+            <include
+                android:id="@+id/sign_up_include_layout"
+                layout="@layout/common_rounded_filled_button"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_weight="1.45" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sign_up_value_layout"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/already_have_account_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:background="?android:selectableItemBackground"
+                android:text="@string/already_have_account"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18"
+                android:fontFamily="@font/rounded_elegance"/>
+
+            <TextView
+                android:id="@+id/login_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:layout_toEndOf="@+id/already_have_account_tv"
+                android:background="?android:selectableItemBackground"
+                android:text="@string/login_txt_button"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_18"
+                android:fontFamily="@font/rounded_elegance"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

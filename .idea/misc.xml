@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/drawable-v24/common_button_round_corners.xml" value="0.240625" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/drawable-v24/ic_email.xml" value="0.240625" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/drawable-v24/rounded_filled_border.xml" value="0.240625" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/drawable-v24/set_cursor_color_layout.xml" value="0.240625" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/drawable/bag.xml" value="0.23692307692307693" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/drawable/button_border_theme_color.xml" value="0.240625" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/drawable/common_button_round_corners.xml" value="0.240625" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/drawable/custom_seekbar_thumb.xml" value="0.240625" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/drawable/ic_backbutton.xml" value="0.240625" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/drawable/ic_booking.xml" value="0.240625" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/drawable/ic_card.xml" value="0.240625" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/drawable/ic_cart.xml" value="0.240625" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/drawable/ic_contact_us.xml" value="0.240625" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/drawable/ic_delete_card.xml" value="0.240625" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/drawable/ic_delete_order.xml" value="0.23692307692307693" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/drawable/ic_email.xml" value="0.240625" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/drawable/ic_home_white.xml" value="0.240625" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/drawable/ic_location.xml" value="0.240625" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/drawable/ic_my_profile.xml" value="0.240625" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/drawable/ic_my_profile_grey.xml" value="0.240625" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/drawable/ic_next_arrow.xml" value="0.240625" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/drawable/ic_notification_icon.xml" value="0.240625" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/drawable/ic_password.xml" value="0.240625" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/drawable/ic_payment_wallet.xml" value="0.240625" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/drawable/ic_pizza.xml" value="0.240625" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/drawable/ic_settings_blue.xml" value="0.240625" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/drawable/ic_student_id.xml" value="0.240625" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/drawable/ic_terms_and_condition.xml" value="0.240625" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/drawable/ic_visa_card.xml" value="0.240625" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/drawable/rounded_filled_border.xml" value="0.240625" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/drawable/set_cursor_color_layout.xml" value="0.240625" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/drawable/snackbar_custom_dialog.xml" value="0.240625" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/activity_authentication.xml" value="0.1816123188405797" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/activity_common.xml" value="0.25" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/activity_main.xml" value="0.17708333333333334" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/activity_splash.xml" value="0.2" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/app_bar_home_screen.xml" value="0.17255434782608695" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/card_view_text_layout.xml" value="0.2205746061167748" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/cart_list_layout.xml" value="0.2" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/common_aboutus_tv_layout.xml" value="0.16757246376811594" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/common_edit_text_layout.xml" value="0.1816123188405797" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/common_rounded_filled_button.xml" value="0.1816123188405797" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/custom_navigation_layout.xml" value="0.17255434782608695" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/empty_list_layout.xml" value="0.18931159420289856" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/forgot_password_edit_text_layout.xml" value="0.17708333333333334" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/fragment_about.xml" value="0.2" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/fragment_add_card.xml" value="0.18" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/fragment_agreement.xml" value="0.25" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/fragment_confirm_order.xml" value="0.18" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/fragment_edit_profile.xml" value="0.14" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/fragment_feedback.xml" value="0.19655797101449277" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/fragment_forgot_password.xml" value="0.17708333333333334" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/fragment_home.xml" value="0.17255434782608695" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/fragment_login.xml" value="0.22" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/fragment_menu.xml" value="0.19157608695652173" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/fragment_my_cart.xml" value="0.18931159420289856" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/fragment_my_order.xml" value="0.1852355072463768" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/fragment_my_profile.xml" value="0.17255434782608695" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/fragment_order_history.xml" value="0.17255434782608695" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/fragment_order_payment.xml" value="0.2078804347826087" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/fragment_order_placed_success_fully.xml" value="0.1366120218579235" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/fragment_order_status.xml" value="0.2" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/fragment_payment.xml" value="0.18" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/fragment_place_your_order.xml" value="0.179808093450146" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/fragment_report_an_issue.xml" value="0.2006340579710145" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/fragment_settings.xml" value="0.25" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/fragment_signup.xml" value="0.1816123188405797" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/nav_header_home_screen.xml" value="0.17255434782608695" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/payment_adapet_layout.xml" value="0.13046448087431695" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/payment_adapter_layout.xml" value="0.2078804347826087" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/pizza_menu_layout.xml" value="0.25" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/toolbar.xml" value="0.17255434782608695" />
+        <entry key="..\:/AMIT_WORK_SPACE/Rthym_assignments/MyPizzaApp/app/src/main/res/layout/toppings_item_layout.xml" value="0.22" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

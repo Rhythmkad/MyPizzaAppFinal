@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:background="@color/white"
+    tools:context=".fragments.AboutUsFragment">
+
+<!-- Image layout   -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7">
+
+        <ImageView
+            android:layout_width="@dimen/_72sdp"
+            android:layout_height="@dimen/_72sdp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/about_us"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+
+<!--  layout to show name about us details  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_weight="1.3"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/student_name_layout"
+            layout="@layout/card_view_text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_4sdp" />
+
+        <include
+            android:id="@+id/student_id_layout"
+            layout="@layout/card_view_text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_4sdp" />
+
+        <include
+            android:id="@+id/course_code_layout"
+            layout="@layout/card_view_text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_4sdp" />
+
+    </LinearLayout>
+</LinearLayout>

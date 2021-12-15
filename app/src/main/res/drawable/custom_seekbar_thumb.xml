@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<selector xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+<!--    -->
+<!--</selector>-->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="?android:colorControlHighlight">
+    <item android:drawable="@drawable/delivery_boy_transparent_48"/>
+</ripple>

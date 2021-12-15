@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.OrderStatusFragment">
+
+<!--  layout to show seek bar, help button   -->
+    <RelativeLayout
+        android:id="@+id/seekbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/order_being_prepared_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:fontFamily="@font/rounded_elegance"
+            android:text="@string/your_order_is_being_prepared_txt"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/help_center_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:background="@drawable/rounded_filled_border"
+            android:fontFamily="@font/rounded_elegance"
+            android:paddingStart="@dimen/_6sdp"
+            android:paddingEnd="@dimen/_6sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:textAlignment="center"
+            android:text="@string/help_center_txt"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_14"
+            tools:ignore="RelativeOverlap" />
+
+        <SeekBar
+            android:id="@+id/seekbar_progress"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@+id/help_center_tv"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:max="10"
+            android:progress="2"
+            android:thumb="@drawable/custom_seekbar_thumb" />
+    </RelativeLayout>
+
+<!--  estimated delivery time  -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:fontFamily="@font/rounded_elegance"
+        android:text="Estimated Delivery Time"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekbar_layout" />
+
+<!--  time to deliver order text  -->
+    <TextView
+        android:id="@+id/estimated_time_value_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="20-25 minutes"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_14"
+        android:fontFamily="@font/rounded_elegance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekbar_layout" />
+
+<!-- delivery mode text view and image view   -->
+
+    <TextView
+        android:id="@+id/delivery_mode_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:fontFamily="@font/rounded_elegance"
+        android:text="Delivery Mode:"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/delivery_mode_iv"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:paddingStart="@dimen/_2sdp"
+        android:paddingEnd="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:src="@drawable/card_payment"
+        app:layout_constraintStart_toEndOf="@+id/delivery_mode_tv"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="ContentDescription" />
+
+<!-- deliver address layout   -->
+    <RelativeLayout
+        android:id="@+id/address_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:background="@drawable/rounded_empty_border"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delivery_mode_tv">
+
+        <TextView
+            android:id="@+id/address_txt_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:fontFamily="@font/rounded_elegance"
+            android:text="Delivery Address"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/customer_address_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/address_txt_tv"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:fontFamily="@font/rounded_elegance"
+            android:maxLines="4"
+            android:text="@string/dummy_delivery_address"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_14" />
+
+    </RelativeLayout>
+
+<!-- pizza amount layout   -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:background="@drawable/rounded_empty_border"
+        app:layout_constraintTop_toBottomOf="@+id/address_relative_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/payment_sub_total_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_toStartOf="@+id/sub_total_value_tv"
+            android:fontFamily="@font/rounded_elegance"
+            android:text="SubTotal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18" />
+
+        <TextView
+            android:id="@+id/sub_total_value_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:fontFamily="@font/rounded_elegance"
+            android:text="@string/dummy_price"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18"
+            tools:ignore="RelativeOverlap" />
+
+
+        <TextView
+            android:id="@+id/payment_tax_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/payment_sub_total_tv"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_toStartOf="@+id/tax_value_tv"
+            android:fontFamily="@font/rounded_elegance"
+            android:text="@string/tax_txt"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18" />
+
+        <TextView
+            android:id="@+id/tax_value_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sub_total_value_tv"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:fontFamily="@font/rounded_elegance"
+            android:text="$ 2.1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18"
+            tools:ignore="RelativeOverlap" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_0_5dp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:background="@color/dark_grey"
+            android:layout_below="@+id/tax_value_tv"/>
+
+        <TextView
+            android:id="@+id/payment_total_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/view"
+            android:fontFamily="@font/rounded_elegance"
+            android:layout_toStartOf="@+id/total_value_tv"
+            android:text="@string/total_amount_txt"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_20" />
+
+        <TextView
+            android:id="@+id/total_value_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:fontFamily="@font/rounded_elegance"
+            android:text="$ 14.1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_0_5dp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:background="@color/dark_grey"
+            android:layout_below="@+id/total_value_tv"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/payment_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_4sdp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+<!--  payment cards layout  -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/card_type"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_weight="0.5"
+            android:src="@drawable/ic_visa_card"
+            tools:ignore="ContentDescription" />
+
+
+        <LinearLayout
+            android:id="@+id/card_details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_weight="2.5"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/card_holder_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:maxLines="1"
+                android:fontFamily="@font/rounded_elegance"
+                android:text="@string/card_holder_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_15" />
+
+            <TextView
+                android:id="@+id/card_number_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rounded_elegance"
+                android:gravity="bottom"
+                android:text="@string/dummy_card_number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/delete_card_iv"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:src="@drawable/ic_delete_card"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_0_5dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/divider_line" />
+
+</LinearLayout>

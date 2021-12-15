@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_8sdp"
+    app:cardElevation="@dimen/_4sdp"
+    app:cardUseCompatPadding="true"
+    tools:ignore="UnusedAttribute"
+    android:paddingStart="@dimen/_4sdp"
+    android:paddingEnd="@dimen/_4sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:padding="@dimen/_4sdp"
+        tools:ignore="DisableBaselineAlignment,UselessParent">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:layout_weight="0.2">
+
+            <ImageView
+                android:id="@+id/aboutIv"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:src="@drawable/ic_my_profile"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+
+            <TextView
+                android:id="@+id/aboutTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.8"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:paddingTop="@dimen/_6sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:backgroundTint="@android:color/transparent"
+                android:hint="@string/dummy_name"
+                android:maxLines="1"
+                android:fontFamily="@font/rounded_elegance"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/set_cursor_color_layout"
+                android:textSize="@dimen/sp_14"
+                tools:ignore="Autofill,LabelFor,TextFields,UnusedAttribute" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
